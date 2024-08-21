@@ -38,7 +38,7 @@ def setup_game(num_players):
 def deal_cards(players, cur_deck):
     deck = random.shuffle(cur_deck)
     for player in players:
-        for _ in range(num_cards):
+        while player.hand.length < num_cards:
             player.hand.append(deck.pop())
     return deck
 
