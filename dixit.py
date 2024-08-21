@@ -1,4 +1,8 @@
+import os
 import random
+import open_clip
+import torch
+from PIL import Image
 
 class Player:
     _id_counter = 0
@@ -31,12 +35,12 @@ def setup_game(num_players):
         players.append(Player(name))
     return players
 
-def deal_cards(players, num_cards):
-    deck = list(range(1, 101))
-    random.shuffle(deck)
+def deal_cards(players, cur_deck):
+    deck = random.shuffle(cur_deck)
     for player in players:
         for _ in range(num_cards):
             player.hand.append(deck.pop())
+    return deck
 
 def storyteller_turn(storyteller):
     print(f"\n{storyteller.name} is the storyteller!")
@@ -101,9 +105,23 @@ def play_game(players):
             
             deal_cards(players, 1)
 
+# makes the images (deck) array
+def load_images_from_directory(directory):
+    initial_deck = []
+    for filename in os.listdir(directory):
+        if filename.endswith(('.png', '.jpg', '.jpeg')):
+            name = os.path.join(directory, filename)
+            initial_deck.append(name)
+    return initial_deck
+
+
 if __name__ == "__main__":
     print("Welcome to Dixit!")
     num_players = int(input("Enter number of players: "))
     players = setup_game(num_players)
-    deal_cards(players, 6)
+
+    # deck initialization 
+    all_cards = {}
+    deck = load_images_from_directory("./cards")
+    cur_deck = deal_cards(players, 6)
     play_game(players)
