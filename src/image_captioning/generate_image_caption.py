@@ -2,7 +2,6 @@ import warnings
 import open_clip
 import torch
 from PIL import Image
-from pathlib import Path
 
 warnings.filterwarnings("ignore", category=FutureWarning, message=".*weights_only=False.*")
 
@@ -25,13 +24,6 @@ class ImageCaptionGenerator:
         return caption
 
 if __name__ == "__main__":
-    current_path = Path.cwd()
-    print("Current Path:", current_path)
-
-    # List and print all child paths (files and directories)
-    print("\nChild Paths:")
-    for child in current_path.iterdir():
-        print(child)
     image_path = "data/image.png"
     caption_generator = ImageCaptionGenerator()
     
