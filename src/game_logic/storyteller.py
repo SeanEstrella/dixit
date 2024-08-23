@@ -4,10 +4,13 @@ import open_clip
 import torch
 from PIL import Image
 
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
 model, _, transform = open_clip.create_model_and_transforms(
-  model_name="coca_ViT-L-14",
-  pretrained="mscoco_finetuned_laion2B-s13B-b90k"
+    model_name="coca_ViT-L-14",
+    pretrained="mscoco_finetuned_laion2B-s13B-b90k"
 )
+model.to(device)
 
 
 # makes the images (deck) array
