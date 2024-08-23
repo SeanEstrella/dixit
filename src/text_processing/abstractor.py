@@ -1,7 +1,6 @@
 import openai
 import os
 import time
-from functools import lru_cache
 
 class Abstractor:
     def __init__(self, api_key=None, model_name="gpt-4o-mini"):
@@ -9,14 +8,26 @@ class Abstractor:
         openai.api_key = self.api_key
         self.model_name = model_name
 
-    @lru_cache(maxsize=1000)
-    def generate_creative_abstract(self, word):
-        """Generate abstract language using OpenAI's GPT-4."""
+    def generate_creative_abstract(self, description, other_cards=None):
+        other_cards = [
+            "A lone wolf howling at the moon",
+            "A butterfly resting on a flower",
+            "An old man sitting on a bench in a park",
+            "A ship sailing on stormy seas",
+            "A cat curled up by the fire",
+            "A mysterious figure in a dark alley",
+            "A child chasing a red balloon",
+]
+        other_cards_description = " | ".join(other_cards) if other_cards else ""
+        
         prompt = (
-            "You are a creative and imaginative storyteller. Given the word '{word}', create a single word or "
-            "a very short phrase (1-3 words) that is unique, abstract, and sparks the imagination. "
-            "The phrase should avoid common or repetitive patterns and instead focus on diversity and novelty."
-        ).format(word=word)
+            f"You are a storyteller in a creative and abstract game called Dixit. Your goal is to give a clue for "
+            f"the following image description: '{description}'. The clue should be poetic, abstract, and evocative, "
+            f"yet concise and complete. Please avoid using the phrase 'Whispers of Grace' or any similar phrases. "
+            f"Generate a unique phrase or word (1-3 words) that captures the essence of your card while making it challenging for others to guess correctly. "
+            f"Avoid using common phrases or too obvious clues. Think creatively to strike a balance between clarity and mystery."
+            )
+
         
         retries = 3
         for attempt in range(retries):
@@ -27,9 +38,13 @@ class Abstractor:
                         {"role": "user", "content": prompt}
                     ],
                     max_tokens=20,
-                    temperature=0.7,
+                    temperature=0.9,
+                    top_p=0.8,
                 )
-                return response.choices[0].message['content'].strip()
+                generated_clue = response.choices[0].message['content'].strip()
+                
+                if generated_clue.lower() != "whispers of grace":
+                    return generated_clue
             except openai.error.RateLimitError:
                 if attempt < retries - 1:
                     print(f"Rate limit exceeded. Retrying in {2 ** attempt} seconds...")
