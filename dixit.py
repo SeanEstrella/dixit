@@ -28,6 +28,12 @@ class Player:
         vote = int(input("Enter the number of the card: ")) - 1
         return vote
 
+    def storyteller_turn(self):
+        print(f"\n{self.name} is the storyteller!")
+        card = self.choose_card()
+        clue = input("Enter a clue for your card: ")
+        return card, clue
+
 class Bot: 
     _id_counter_ = 0
     def __init__(self, name):
@@ -50,6 +56,20 @@ class Bot:
             print(f"{i + 1}: Card {card[1]}")
         vote = int(input("Enter the number of the card: ")) - 1
         return vote
+
+    # does the choosing card component inside of this function because storyteller and player card choice is different
+    # does not do any obfuscation on hint right now 
+    def storyteller_turn(self):
+        print(f"\n{self.name} is the storyteller!")
+        self.hand = random.shuffle(self.hand)
+        card = self.hand.pop()
+        image = Image.open(card).convert("RGB")
+        image = transform(im).unsqueeze(0)
+        # query openclip with Image itself
+        with torch.no_grad(), torch.cuda.amp.autocast():
+                generated = model.generate(im)
+        clue = (open_clip.decode(generated[0]).split("<end_of_text>")[0].replace("<start_of_text>", ""))
+        return card, clue
 
 def setup_game(num_players):
     players = []
@@ -107,7 +127,7 @@ def score_round(players, storyteller, storyteller_card, table, votes):
 def play_game(players):
     while True:
         for storyteller in players:
-            storyteller_card, clue = storyteller_turn(storyteller)
+            storyteller_card, clue = storyteller.storyteller_turn()
             print(f"\nClue: {clue}\n")
             table, played_cards = collect_cards(players, storyteller_card, storyteller)
             votes = []
