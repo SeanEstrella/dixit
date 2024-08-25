@@ -207,3 +207,4 @@ if __name__ == "__main__":
     deck = load_images_from_directory("./cards")
     cur_deck = deal_cards(players, 6)
     play_game(players)
+

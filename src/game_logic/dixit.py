@@ -2,6 +2,11 @@ import os
 import random
 from game_logic.humanAgent import Human
 
+# need to make model variables global so they can be accessed by bot calls and not reinitialized every 
+# time we want to use them. Still need to either pass them to 
+
+# use global variable by declaring at the top, will be visible in the entire program
+# also, test if this global variable persists across program calls, i.e. bot or player subcalls 
 
 def setup_game(num_players):
     players = []
@@ -91,6 +96,7 @@ def load_images_from_directory(directory):
 
 
 if __name__ == "__main__":
+    model, transform, device = initialize_model()
     print("Welcome to Dixit!")
     num_players = int(input("Enter number of players: "))
     players = setup_game(num_players)
