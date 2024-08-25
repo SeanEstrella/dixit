@@ -1,18 +1,13 @@
 import os
 import random
-import open_clip
-import torch
-from PIL import Image
-from game_logic.player import Player
-
-
+from game_logic.humanAgent import Human
 
 
 def setup_game(num_players):
     players = []
     for i in range(num_players):
         name = input(f"Enter name for player {i + 1}: ")
-        players.append(Player(name))
+        players.append(Human(name))
     return players
 
 def deal_cards(players, cur_deck):

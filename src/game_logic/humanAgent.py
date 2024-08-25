@@ -1,9 +1,9 @@
-class Player:
+class Human:
     _id_counter = 0
 
     def __init__(self, name):
-        self.id = Player._id_counter
-        Player._id_counter += 1
+        self.id = Human._id_counter
+        Human._id_counter += 1
         self.name = name
         self.hand = []
         self.score = 0
