@@ -1,0 +1,36 @@
+2024-08-27 00:59:02 - model - INFO - ModelManager initialized with device cuda
+2024-08-27 00:59:02 - model - INFO - Loading model coca_ViT-L-14 with pretrained weights: mscoco_finetuned_laion2B-s13B-b90k
+2024-08-27 00:59:10 - model - INFO - Model loaded in 7.42 seconds.
+2024-08-27 01:01:42 - model - INFO - ModelManager initialized with device cuda
+2024-08-27 01:01:42 - model - INFO - Loading model coca_ViT-L-14 with pretrained weights: mscoco_finetuned_laion2B-s13B-b90k
+2024-08-27 01:01:49 - model - INFO - Model loaded in 6.80 seconds.
+2024-08-27 01:10:37 - model - INFO - ModelManager initialized with device cuda
+2024-08-27 01:10:37 - model - INFO - Loading model coca_ViT-L-14 with pretrained weights: mscoco_finetuned_laion2B-s13B-b90k
+2024-08-27 01:10:43 - model - INFO - Model loaded in 6.62 seconds.
+2024-08-27 01:11:57 - model - INFO - ModelManager initialized with device cuda
+2024-08-27 01:11:57 - model - INFO - Loading model coca_ViT-L-14 with pretrained weights: mscoco_finetuned_laion2B-s13B-b90k
+2024-08-27 01:12:04 - model - INFO - Model loaded in 6.47 seconds.
+2024-08-27 01:12:39 - model - INFO - ModelManager initialized with device cuda
+2024-08-27 01:12:39 - model - INFO - Loading model coca_ViT-L-14 with pretrained weights: mscoco_finetuned_laion2B-s13B-b90k
+2024-08-27 01:12:49 - model - INFO - Model loaded in 10.09 seconds.
+2024-08-27 01:13:52 - model - INFO - ModelManager initialized with device cuda
+2024-08-27 01:13:52 - model - INFO - Loading model coca_ViT-L-14 with pretrained weights: mscoco_finetuned_laion2B-s13B-b90k
+2024-08-27 01:14:02 - model - INFO - Model loaded in 10.07 seconds.
+2024-08-27 01:26:15 - model - INFO - ModelManager initialized with device cuda
+2024-08-27 01:26:15 - model - INFO - Loading model coca_ViT-L-14 with pretrained weights: mscoco_finetuned_laion2B-s13B-b90k
+2024-08-27 01:26:22 - model - INFO - Model loaded in 6.34 seconds.
+2024-08-27 01:31:03 - model - INFO - ModelManager initialized with device cuda
+2024-08-27 01:31:03 - model - INFO - Loading model coca_ViT-L-14 with pretrained weights: mscoco_finetuned_laion2B-s13B-b90k
+2024-08-27 01:31:12 - model - INFO - Model loaded in 8.42 seconds on device: cuda.
+2024-08-27 01:35:25 - model - INFO - ModelManager initialized with device cuda
+2024-08-27 01:35:25 - model - INFO - Loading model coca_ViT-L-14 with pretrained weights: mscoco_finetuned_laion2B-s13B-b90k
+2024-08-27 01:35:35 - model - INFO - Model loaded in 10.05 seconds on device: cuda.
+2024-08-27 01:37:22 - model - INFO - ModelManager initialized with device cuda
+2024-08-27 01:37:22 - model - INFO - Loading model coca_ViT-L-14 with pretrained weights: mscoco_finetuned_laion2B-s13B-b90k
+2024-08-27 01:37:31 - model - INFO - Model loaded in 9.41 seconds on device: cuda.
+2024-08-27 01:40:12 - model - INFO - ModelManager initialized with device cuda
+2024-08-27 01:40:12 - model - INFO - Loading model coca_ViT-L-14 with pretrained weights: mscoco_finetuned_laion2B-s13B-b90k
+2024-08-27 01:40:22 - model - INFO - Model loaded in 9.33 seconds on device: cuda.
+2024-08-27 01:41:56 - model - INFO - ModelManager initialized with device cuda
+2024-08-27 01:41:56 - model - INFO - Loading model coca_ViT-L-14 with pretrained weights: mscoco_finetuned_laion2B-s13B-b90k
+2024-08-27 01:42:05 - model - INFO - Model loaded in 9.11 seconds on device: cuda.

@@ -1,0 +1,481 @@
+2024-08-25 16:12:39,800 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 16:12:41,088 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 16:13:10,976 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 16:13:12,049 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 16:13:45,154 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 16:13:46,204 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 16:14:11,805 - Bot #0 - INFO - Bot #0 is choosing a card based on the description: When you think no one is listening
+2024-08-25 16:14:11,813 - PIL.TiffImagePlugin - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'2014:05:25 22:16:35\x00'
+2024-08-25 16:14:12,239 - Bot #0 - DEBUG - Card data/cards/card_00065.jpg: similarity score = 0.15671634674072266
+2024-08-25 16:14:12,336 - Bot #0 - DEBUG - Card data/cards/card_00074.jpg: similarity score = 0.23403415083885193
+2024-08-25 16:14:12,428 - Bot #0 - DEBUG - Card data/cards/card_00086.jpg: similarity score = 0.15560367703437805
+2024-08-25 16:14:12,472 - Bot #0 - DEBUG - Card data/cards/card_00007.jpg: similarity score = 0.16633865237236023
+2024-08-25 16:14:12,514 - Bot #0 - DEBUG - Card data/cards/card_00053.jpg: similarity score = 0.1821753978729248
+2024-08-25 16:14:12,559 - Bot #0 - DEBUG - Card data/cards/card_00042.jpg: similarity score = 0.22244223952293396
+2024-08-25 16:14:12,559 - Bot #0 - INFO - Bot #0 chose card data/cards/card_00074.jpg with the highest similarity score of 0.23403415083885193
+2024-08-25 16:14:12,559 - Bot #1 - INFO - Bot #1 is choosing a card based on the description: When you think no one is listening
+2024-08-25 16:14:12,603 - Bot #1 - DEBUG - Card data/cards/card_00017.jpg: similarity score = 0.20442210137844086
+2024-08-25 16:14:12,620 - Bot #1 - DEBUG - Card data/cards/card_00040.jpg: similarity score = 0.16555503010749817
+2024-08-25 16:14:12,637 - Bot #1 - DEBUG - Card data/cards/card_00062.jpg: similarity score = 0.20295141637325287
+2024-08-25 16:14:12,654 - Bot #1 - DEBUG - Card data/cards/card_00058.jpg: similarity score = 0.1937270611524582
+2024-08-25 16:14:12,671 - Bot #1 - DEBUG - Card data/cards/card_00073.jpg: similarity score = 0.1685795783996582
+2024-08-25 16:14:12,683 - Bot #1 - DEBUG - Card data/cards/card_00072.jpg: similarity score = 0.17455792427062988
+2024-08-25 16:14:12,683 - Bot #1 - INFO - Bot #1 chose card data/cards/card_00017.jpg with the highest similarity score of 0.20442210137844086
+2024-08-25 16:14:12,683 - Bot #0 - INFO - Bot #0 is voting for the card that best matches the description: When you think no one is listening
+2024-08-25 16:14:12,696 - Bot #0 - DEBUG - Card data/cards/card_00017.jpg: similarity score = 0.20442210137844086
+2024-08-25 16:14:12,696 - PIL.TiffImagePlugin - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'2011:02:18 09:10:41\x00'
+2024-08-25 16:14:12,711 - Bot #0 - DEBUG - Card data/cards/card_00076.jpg: similarity score = 0.20402438938617706
+2024-08-25 16:14:12,728 - Bot #0 - DEBUG - Card data/cards/card_00074.jpg: similarity score = 0.23403415083885193
+2024-08-25 16:14:12,729 - Bot #0 - INFO - Bot #0 voted for card data/cards/card_00074.jpg with the highest similarity score of 0.23403415083885193
+2024-08-25 16:14:12,729 - Bot #1 - INFO - Bot #1 is voting for the card that best matches the description: When you think no one is listening
+2024-08-25 16:14:12,743 - Bot #1 - DEBUG - Card data/cards/card_00017.jpg: similarity score = 0.20442210137844086
+2024-08-25 16:14:12,743 - PIL.TiffImagePlugin - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'2011:02:18 09:10:41\x00'
+2024-08-25 16:14:12,760 - Bot #1 - DEBUG - Card data/cards/card_00076.jpg: similarity score = 0.20402438938617706
+2024-08-25 16:14:12,776 - Bot #1 - DEBUG - Card data/cards/card_00074.jpg: similarity score = 0.23403415083885193
+2024-08-25 16:14:12,777 - Bot #1 - INFO - Bot #1 voted for card data/cards/card_00074.jpg with the highest similarity score of 0.23403415083885193
+2024-08-25 16:16:53,933 - Bot #0 - INFO - Bot #0 is the storyteller!
+2024-08-25 16:16:53,934 - Bot #0 - DEBUG - Original clue for card data/cards/card_00053.jpg: there is a painting of some buildings and a sky background . 
+2024-08-25 16:16:53,936 - openai - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2024-08-25 16:16:53,936 - openai - DEBUG - api_version=None data='{"model": "gpt-4o-mini", "messages": [{"role": "user", "content": "You are a storyteller in a creative and abstract game called Dixit. Your goal is to give a clue for the following image description: \'there is a painting of some buildings and a sky background . \'. The clue should be poetic, abstract, and evocative, yet concise and complete. Please avoid using the phrase \'Whispers of Grace\' or any similar phrases. Generate a unique phrase or word (1-3 words) that captures the essence of your card while making it challenging for others to guess correctly. Avoid using common phrases or too obvious clues. Think creatively to strike a balance between clarity and mystery."}], "max_tokens": 20, "temperature": 0.9, "top_p": 0.8}' message='Post details'
+2024-08-25 16:16:53,936 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-08-25 16:16:53,937 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2024-08-25 16:16:54,908 - urllib3.connectionpool - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/11" 200 None
+2024-08-25 16:16:54,908 - openai - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=265 request_id=req_e1d9ba846f5b7a29373ae9a312930191 response_code=200
+2024-08-25 16:16:54,910 - Bot #0 - DEBUG - Obfuscated clue: "Urban Reverie"
+2024-08-25 16:27:23,706 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 16:27:25,038 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 16:27:58,197 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 16:27:59,268 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 16:29:28,124 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 16:29:29,412 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 16:29:43,356 - Bot #0 - INFO - Bot #0 is choosing a card based on the description: some clue
+2024-08-25 16:29:43,363 - PIL.TiffImagePlugin - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'2007:07:25 10:09:47\x00'
+2024-08-25 16:29:43,977 - Bot #0 - DEBUG - Card data/cards/card_00006.jpg: similarity score = 0.2064175009727478
+2024-08-25 16:29:43,978 - PIL.TiffImagePlugin - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'2011:07:17 09:34:31\x00'
+2024-08-25 16:29:44,082 - Bot #0 - DEBUG - Card data/cards/card_00020.jpg: similarity score = 0.13491223752498627
+2024-08-25 16:29:44,181 - Bot #0 - DEBUG - Card data/cards/card_00028.jpg: similarity score = 0.1406828910112381
+2024-08-25 16:29:44,195 - Bot #0 - DEBUG - Card data/cards/card_00029.jpg: similarity score = 0.15649735927581787
+2024-08-25 16:29:44,212 - Bot #0 - DEBUG - Card data/cards/card_00091.jpg: similarity score = 0.20741495490074158
+2024-08-25 16:29:44,224 - Bot #0 - DEBUG - Card data/cards/card_00098.jpg: similarity score = 0.17647098004817963
+2024-08-25 16:29:44,225 - Bot #0 - INFO - Bot #0 chose card data/cards/card_00091.jpg with the highest similarity score of 0.20741495490074158
+2024-08-25 16:29:44,225 - Bot #1 - INFO - Bot #1 is choosing a card based on the description: some clue
+2024-08-25 16:29:44,240 - Bot #1 - DEBUG - Card data/cards/card_00049.jpg: similarity score = 0.18932227790355682
+2024-08-25 16:29:44,252 - Bot #1 - DEBUG - Card data/cards/card_00042.jpg: similarity score = 0.15306296944618225
+2024-08-25 16:29:44,263 - Bot #1 - DEBUG - Card data/cards/card_00083.jpg: similarity score = 0.18067604303359985
+2024-08-25 16:29:44,264 - PIL.TiffImagePlugin - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'2013:07:02 10:05:48\x00'
+2024-08-25 16:29:44,275 - Bot #1 - DEBUG - Card data/cards/card_00052.jpg: similarity score = 0.15287280082702637
+2024-08-25 16:29:44,276 - PIL.TiffImagePlugin - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'2014:09:25 13:40:49\x00'
+2024-08-25 16:29:44,287 - Bot #1 - DEBUG - Card data/cards/card_00022.jpg: similarity score = 0.15743711590766907
+2024-08-25 16:29:44,304 - Bot #1 - DEBUG - Card data/cards/card_00031.jpg: similarity score = 0.22022254765033722
+2024-08-25 16:29:44,304 - Bot #1 - INFO - Bot #1 chose card data/cards/card_00031.jpg with the highest similarity score of 0.22022254765033722
+2024-08-25 16:29:44,304 - Bot #0 - INFO - Bot #0 is voting for the card that best matches the description: some clue
+2024-08-25 16:29:44,320 - Bot #0 - DEBUG - Card data/cards/card_00091.jpg: similarity score = 0.20741495490074158
+2024-08-25 16:29:44,332 - Bot #0 - DEBUG - Card data/cards/card_00046.jpg: similarity score = 0.19101274013519287
+2024-08-25 16:29:44,348 - Bot #0 - DEBUG - Card data/cards/card_00031.jpg: similarity score = 0.22022254765033722
+2024-08-25 16:29:44,348 - Bot #0 - INFO - Bot #0 voted for card data/cards/card_00031.jpg with the highest similarity score of 0.22022254765033722
+2024-08-25 16:29:44,348 - Bot #1 - INFO - Bot #1 is voting for the card that best matches the description: some clue
+2024-08-25 16:29:44,365 - Bot #1 - DEBUG - Card data/cards/card_00091.jpg: similarity score = 0.20741495490074158
+2024-08-25 16:29:44,378 - Bot #1 - DEBUG - Card data/cards/card_00046.jpg: similarity score = 0.19101274013519287
+2024-08-25 16:29:44,395 - Bot #1 - DEBUG - Card data/cards/card_00031.jpg: similarity score = 0.22022254765033722
+2024-08-25 16:29:44,395 - Bot #1 - INFO - Bot #1 voted for card data/cards/card_00031.jpg with the highest similarity score of 0.22022254765033722
+2024-08-25 17:32:45,425 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:32:46,536 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:32:46,959 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:32:48,008 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:33:58,970 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:34:00,044 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:34:00,491 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:34:01,538 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:34:18,624 - Bot #0 - INFO - Bot #0 is choosing a card based on the description: Clue
+2024-08-25 17:34:19,230 - Bot #0 - DEBUG - Card data/cards/card_00035.jpg: similarity score = 0.2265859842300415
+2024-08-25 17:34:19,333 - Bot #0 - DEBUG - Card data/cards/card_00002.jpg: similarity score = 0.21338388323783875
+2024-08-25 17:34:19,427 - Bot #0 - DEBUG - Card data/cards/card_00080.jpg: similarity score = 0.16921384632587433
+2024-08-25 17:34:19,453 - Bot #0 - DEBUG - Card data/cards/card_00053.jpg: similarity score = 0.18368804454803467
+2024-08-25 17:34:19,455 - PIL.TiffImagePlugin - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'2014:05:25 22:16:35\x00'
+2024-08-25 17:34:19,469 - Bot #0 - DEBUG - Card data/cards/card_00065.jpg: similarity score = 0.11726753413677216
+2024-08-25 17:34:19,483 - Bot #0 - DEBUG - Card data/cards/card_00092.jpg: similarity score = 0.179687038064003
+2024-08-25 17:34:19,483 - Bot #0 - INFO - Bot #0 chose card data/cards/card_00035.jpg with the highest similarity score of 0.2265859842300415
+2024-08-25 17:34:19,483 - Bot #1 - INFO - Bot #1 is choosing a card based on the description: Clue
+2024-08-25 17:34:19,496 - Bot #1 - DEBUG - Card data/cards/card_00068.jpg: similarity score = 0.15888622403144836
+2024-08-25 17:34:19,510 - Bot #1 - DEBUG - Card data/cards/card_00095.jpg: similarity score = 0.1414707899093628
+2024-08-25 17:34:19,510 - PIL.TiffImagePlugin - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'2007:07:25 10:09:47\x00'
+2024-08-25 17:34:19,528 - Bot #1 - DEBUG - Card data/cards/card_00006.jpg: similarity score = 0.20743286609649658
+2024-08-25 17:34:19,547 - Bot #1 - DEBUG - Card data/cards/card_00051.jpg: similarity score = 0.1493670493364334
+2024-08-25 17:34:19,548 - PIL.TiffImagePlugin - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 22 - Data Location: 26 - value: b'2011:07:17 09:34:31\x00'
+2024-08-25 17:34:19,565 - Bot #1 - DEBUG - Card data/cards/card_00020.jpg: similarity score = 0.13899841904640198
+2024-08-25 17:34:19,576 - Bot #1 - DEBUG - Card data/cards/card_00093.jpg: similarity score = 0.20851273834705353
+2024-08-25 17:34:19,577 - Bot #1 - INFO - Bot #1 chose card data/cards/card_00093.jpg with the highest similarity score of 0.20851273834705353
+2024-08-25 17:34:19,577 - Bot #0 - INFO - Bot #0 is voting for the card that best matches the description: Clue
+2024-08-25 17:34:19,592 - Bot #0 - DEBUG - Card data/cards/card_00011.jpg: similarity score = 0.18497538566589355
+2024-08-25 17:34:19,606 - Bot #0 - DEBUG - Card data/cards/card_00035.jpg: similarity score = 0.2265859842300415
+2024-08-25 17:34:19,619 - Bot #0 - DEBUG - Card data/cards/card_00093.jpg: similarity score = 0.20851273834705353
+2024-08-25 17:34:19,619 - Bot #0 - INFO - Bot #0 voted for card data/cards/card_00035.jpg with the highest similarity score of 0.2265859842300415
+2024-08-25 17:34:19,619 - Bot #1 - INFO - Bot #1 is voting for the card that best matches the description: Clue
+2024-08-25 17:34:19,636 - Bot #1 - DEBUG - Card data/cards/card_00011.jpg: similarity score = 0.18497538566589355
+2024-08-25 17:34:19,650 - Bot #1 - DEBUG - Card data/cards/card_00035.jpg: similarity score = 0.2265859842300415
+2024-08-25 17:34:19,661 - Bot #1 - DEBUG - Card data/cards/card_00093.jpg: similarity score = 0.20851273834705353
+2024-08-25 17:34:19,661 - Bot #1 - INFO - Bot #1 voted for card data/cards/card_00035.jpg with the highest similarity score of 0.2265859842300415
+2024-08-25 17:34:22,357 - Bot #0 - INFO - Bot #0 is the storyteller!
+2024-08-25 17:34:22,357 - Bot #0 - DEBUG - Original clue for card data/cards/card_00092.jpg: a girl flying through the air while holding an umbrella . 
+2024-08-25 17:34:47,436 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:34:48,489 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:34:48,890 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:34:49,898 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:35:05,538 - Bot #0 - INFO - Bot #0 is choosing a card based on the description: Clue clue clue
+2024-08-25 17:35:05,921 - Bot #0 - DEBUG - Card data/cards/card_00036.jpg: similarity score = 0.15136763453483582
+2024-08-25 17:35:06,020 - Bot #0 - DEBUG - Card data/cards/card_00093.jpg: similarity score = 0.17792868614196777
+2024-08-25 17:35:06,112 - Bot #0 - DEBUG - Card data/cards/card_00071.jpg: similarity score = 0.15135076642036438
+2024-08-25 17:35:06,201 - Bot #0 - DEBUG - Card data/cards/card_00053.jpg: similarity score = 0.16659954190254211
+2024-08-25 17:35:06,251 - Bot #0 - DEBUG - Card data/cards/card_00051.jpg: similarity score = 0.12253008037805557
+2024-08-25 17:35:06,268 - Bot #0 - DEBUG - Card data/cards/card_00062.jpg: similarity score = 0.16442260146141052
+2024-08-25 17:35:06,268 - Bot #0 - INFO - Bot #0 chose card data/cards/card_00093.jpg with the highest similarity score of 0.17792868614196777
+2024-08-25 17:35:06,268 - Bot #1 - INFO - Bot #1 is choosing a card based on the description: Clue clue clue
+2024-08-25 17:35:06,280 - Bot #1 - DEBUG - Card data/cards/card_00054.jpg: similarity score = 0.13294395804405212
+2024-08-25 17:35:06,296 - Bot #1 - DEBUG - Card data/cards/card_00028.jpg: similarity score = 0.15431687235832214
+2024-08-25 17:35:06,308 - Bot #1 - DEBUG - Card data/cards/card_00084.jpg: similarity score = 0.18523874878883362
+2024-08-25 17:35:06,320 - Bot #1 - DEBUG - Card data/cards/card_00048.jpg: similarity score = 0.1929723024368286
+2024-08-25 17:35:06,332 - Bot #1 - DEBUG - Card data/cards/card_00001.jpg: similarity score = 0.0789947360754013
+2024-08-25 17:35:06,344 - Bot #1 - DEBUG - Card data/cards/card_00090.jpg: similarity score = 0.1472974717617035
+2024-08-25 17:35:06,344 - Bot #1 - INFO - Bot #1 chose card data/cards/card_00048.jpg with the highest similarity score of 0.1929723024368286
+2024-08-25 17:35:06,345 - Bot #0 - INFO - Bot #0 is voting for the card that best matches the description: Clue clue clue
+2024-08-25 17:35:06,356 - Bot #0 - DEBUG - Card data/cards/card_00093.jpg: similarity score = 0.17792868614196777
+2024-08-25 17:35:06,371 - Bot #0 - DEBUG - Card data/cards/card_00023.jpg: similarity score = 0.17043563723564148
+2024-08-25 17:35:06,382 - Bot #0 - DEBUG - Card data/cards/card_00048.jpg: similarity score = 0.1929723024368286
+2024-08-25 17:35:06,382 - Bot #0 - INFO - Bot #0 voted for card data/cards/card_00048.jpg with the highest similarity score of 0.1929723024368286
+2024-08-25 17:35:06,382 - Bot #1 - INFO - Bot #1 is voting for the card that best matches the description: Clue clue clue
+2024-08-25 17:35:06,394 - Bot #1 - DEBUG - Card data/cards/card_00093.jpg: similarity score = 0.17792868614196777
+2024-08-25 17:35:06,408 - Bot #1 - DEBUG - Card data/cards/card_00023.jpg: similarity score = 0.17043563723564148
+2024-08-25 17:35:06,419 - Bot #1 - DEBUG - Card data/cards/card_00048.jpg: similarity score = 0.1929723024368286
+2024-08-25 17:35:06,419 - Bot #1 - INFO - Bot #1 voted for card data/cards/card_00048.jpg with the highest similarity score of 0.1929723024368286
+2024-08-25 17:35:08,531 - Bot #0 - INFO - Bot #0 is the storyteller!
+2024-08-25 17:35:08,531 - Bot #0 - DEBUG - Original clue for card data/cards/card_00062.jpg: a painting of a man 's head and a castle . 
+2024-08-25 17:35:08,533 - openai - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2024-08-25 17:35:08,533 - openai - DEBUG - api_version=None data='{"model": "gpt-4o-mini", "messages": [{"role": "user", "content": "You are a storyteller in a creative and abstract game called Dixit. Your goal is to give a clue for the following image description: \'a painting of a man \'s head and a castle . \'. The clue should be poetic, abstract, and evocative, yet concise and complete. Please avoid using the phrase \'Whispers of Grace\' or any similar phrases. Generate a unique phrase or word (1-3 words) that captures the essence of your card while making it challenging for others to guess correctly. Avoid using common phrases or too obvious clues. Think creatively to strike a balance between clarity and mystery."}], "max_tokens": 20, "temperature": 0.9, "top_p": 0.8}' message='Post details'
+2024-08-25 17:35:08,533 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-08-25 17:35:08,534 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2024-08-25 17:35:09,280 - urllib3.connectionpool - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/11" 200 None
+2024-08-25 17:35:09,280 - openai - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=268 request_id=req_9149f929a30c8ad4cfb17210e48493ca response_code=200
+2024-08-25 17:35:09,282 - Bot #0 - DEBUG - Obfuscated clue: "Fortress of Thought"
+2024-08-25 17:35:10,737 - Bot #1 - INFO - Bot #1 is choosing a card based on the description: "Fortress of Thought"
+2024-08-25 17:35:10,802 - Bot #1 - DEBUG - Card data/cards/card_00054.jpg: similarity score = 0.19869227707386017
+2024-08-25 17:35:10,863 - Bot #1 - DEBUG - Card data/cards/card_00028.jpg: similarity score = 0.1696525365114212
+2024-08-25 17:35:10,919 - Bot #1 - DEBUG - Card data/cards/card_00084.jpg: similarity score = 0.21608158946037292
+2024-08-25 17:35:10,976 - Bot #1 - DEBUG - Card data/cards/card_00001.jpg: similarity score = 0.1966431736946106
+2024-08-25 17:35:11,026 - Bot #1 - DEBUG - Card data/cards/card_00090.jpg: similarity score = 0.15696585178375244
+2024-08-25 17:35:11,040 - Bot #1 - DEBUG - Card data/cards/card_00069.jpg: similarity score = 0.22309938073158264
+2024-08-25 17:35:11,040 - Bot #1 - INFO - Bot #1 chose card data/cards/card_00069.jpg with the highest similarity score of 0.22309938073158264
+2024-08-25 17:35:19,805 - Bot #1 - INFO - Bot #1 is voting for the card that best matches the description: "Fortress of Thought"
+2024-08-25 17:35:19,911 - Bot #1 - DEBUG - Card data/cards/card_00096.jpg: similarity score = 0.23069506883621216
+2024-08-25 17:35:20,008 - Bot #1 - DEBUG - Card data/cards/card_00069.jpg: similarity score = 0.22309938073158264
+2024-08-25 17:35:20,036 - Bot #1 - DEBUG - Card data/cards/card_00062.jpg: similarity score = 0.3070944845676422
+2024-08-25 17:35:20,037 - Bot #1 - INFO - Bot #1 voted for card data/cards/card_00062.jpg with the highest similarity score of 0.3070944845676422
+2024-08-25 17:35:24,756 - Bot #1 - INFO - Bot #1 is the storyteller!
+2024-08-25 17:35:24,756 - Bot #1 - DEBUG - Original clue for card data/cards/card_00090.jpg: a painting of a boat in the water with trees in the background . 
+2024-08-25 17:35:24,756 - openai - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2024-08-25 17:35:24,756 - openai - DEBUG - api_version=None data='{"model": "gpt-4o-mini", "messages": [{"role": "user", "content": "You are a storyteller in a creative and abstract game called Dixit. Your goal is to give a clue for the following image description: \'a painting of a boat in the water with trees in the background . \'. The clue should be poetic, abstract, and evocative, yet concise and complete. Please avoid using the phrase \'Whispers of Grace\' or any similar phrases. Generate a unique phrase or word (1-3 words) that captures the essence of your card while making it challenging for others to guess correctly. Avoid using common phrases or too obvious clues. Think creatively to strike a balance between clarity and mystery."}], "max_tokens": 20, "temperature": 0.9, "top_p": 0.8}' message='Post details'
+2024-08-25 17:35:25,229 - urllib3.connectionpool - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/11" 200 None
+2024-08-25 17:35:25,230 - openai - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=114 request_id=req_8360e625b5d272a962cbf00d3c0a7bf6 response_code=200
+2024-08-25 17:35:25,230 - Bot #1 - DEBUG - Obfuscated clue: "Serenity's Voyage"
+2024-08-25 17:38:12,540 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:38:13,616 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:38:14,063 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:38:15,118 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:47:09,452 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:47:10,758 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:47:11,186 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:47:12,249 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:47:59,768 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:48:01,049 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:48:11,439 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:48:12,539 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:48:42,322 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:48:43,387 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:49:07,316 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:49:08,426 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:50:10,557 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:50:11,626 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:50:12,033 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:50:13,057 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:58:51,397 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:58:52,538 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:59:45,143 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:59:46,222 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 17:59:46,705 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 17:59:47,743 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:01:01,425 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:01:02,485 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:01:02,907 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:01:04,052 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:03:07,530 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:03:08,612 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:03:09,042 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:03:10,072 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:04:02,699 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:04:03,796 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:04:04,252 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:04:05,284 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:05:25,001 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:05:26,109 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:05:26,518 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:05:27,711 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:14:32,602 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:14:33,701 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:14:34,117 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:14:35,259 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:16:02,374 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:16:03,745 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:16:04,173 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:16:05,259 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:18:41,419 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:18:42,751 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:18:43,294 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:18:44,611 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:19:25,749 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:19:26,878 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:19:27,290 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:19:28,328 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:22:29,966 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:22:31,084 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:22:31,545 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:22:32,674 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:24:51,417 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:24:52,551 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:24:52,965 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:24:54,168 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:30:32,607 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:30:33,929 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:30:34,432 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:30:35,766 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:33:35,086 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:33:36,497 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:33:37,173 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:33:38,324 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:38:56,875 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:38:58,258 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:38:58,791 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:39:00,205 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:44:59,262 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:45:00,560 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:45:01,054 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:45:02,328 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:47:21,019 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:47:22,322 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:47:22,806 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:47:24,212 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:56:02,910 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:56:04,203 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:56:04,707 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:56:06,040 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:59:27,106 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:59:28,248 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 18:59:28,701 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 18:59:29,975 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 19:11:57,760 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 19:11:59,086 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 19:13:03,106 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 19:13:04,223 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 19:13:04,699 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 19:13:05,793 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 19:14:19,053 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 19:14:20,246 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 19:14:20,685 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 19:14:21,777 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 19:17:52,483 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 19:17:53,611 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 19:18:18,498 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 19:18:19,606 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 19:19:34,629 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 19:19:35,727 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 19:20:42,785 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 19:20:43,898 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 19:51:46,460 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 19:51:47,760 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 19:51:48,641 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 19:51:51,154 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 19:51:51,359 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 19:51:51,364 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 19:59:13,701 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 19:59:15,024 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 20:01:39,352 - root - INFO - Loaded ViT-B-32 model config.
+2024-08-25 20:01:40,519 - root - INFO - Loading pretrained ViT-B-32 weights (laion2b_e16).
+2024-08-25 20:01:46,843 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:01:49,298 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 20:01:49,584 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:01:49,588 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:12:57,802 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:13:00,289 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 20:13:00,642 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:13:00,645 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:18:18,081 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:18:20,461 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 20:18:20,641 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:18:20,644 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:18:23,819 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:18:26,439 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:18:26,441 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:24:34,851 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:24:37,257 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 20:24:37,671 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:24:37,672 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:24:40,651 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:24:43,458 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:24:43,460 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:25:36,845 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:25:39,245 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 20:25:39,688 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:25:39,690 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:25:46,880 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:25:49,706 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:25:49,725 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:32:05,000 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:32:07,383 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 20:32:07,872 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:32:07,873 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:32:13,777 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:32:16,632 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:32:16,649 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:36:17,261 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:36:19,740 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 20:36:20,175 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:36:20,176 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:36:23,530 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:36:26,238 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:36:26,239 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:45:11,499 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:45:13,920 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 20:45:14,339 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:45:14,340 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:45:20,359 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:45:23,260 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:45:23,281 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:51:10,264 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:51:12,694 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 20:51:13,037 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:51:13,038 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:51:16,313 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:51:19,035 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:51:19,037 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:56:29,154 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:56:31,559 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 20:56:31,920 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:56:31,922 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 20:56:34,931 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 20:56:37,616 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 20:56:37,621 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 21:12:17,472 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 21:12:20,049 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 21:12:20,239 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 21:12:20,240 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 21:12:23,706 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 21:12:26,829 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 21:12:26,831 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 21:13:59,441 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 21:14:02,007 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 21:14:02,186 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 21:14:02,188 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 21:14:07,045 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 21:14:09,771 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 21:14:09,773 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 21:35:35,290 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 21:35:37,828 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 21:35:38,289 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 21:35:38,294 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 21:35:44,560 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 21:35:47,119 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 21:35:47,269 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 21:35:47,272 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 21:39:48,100 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 21:39:50,583 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 21:39:50,982 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 21:39:50,984 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 21:39:57,364 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 21:40:00,268 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 21:40:00,833 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 21:40:00,849 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 21:48:02,751 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 21:48:05,414 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 21:48:05,728 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 21:48:05,730 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 21:48:17,229 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 21:48:20,111 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 21:48:20,135 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 21:59:39,549 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 21:59:42,034 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 21:59:42,489 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 21:59:42,490 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 21:59:46,781 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 21:59:49,486 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 21:59:49,765 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 21:59:49,767 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:01:43,579 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:01:46,016 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:01:46,360 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:01:46,361 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:01:50,046 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:01:52,517 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:01:52,824 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:01:52,826 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:04:27,913 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:04:30,352 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:04:30,793 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:04:30,795 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:04:36,317 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:04:39,073 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:04:39,329 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:04:39,346 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:15:35,620 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:15:38,115 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:15:38,608 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:15:38,611 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:15:45,778 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:15:48,230 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:15:48,528 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:15:48,531 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:19:15,379 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:19:17,951 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:19:18,308 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:19:18,311 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:19:25,717 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:19:28,788 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:19:29,087 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:19:29,106 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:22:53,969 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:22:56,423 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:22:56,601 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:22:56,602 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:23:04,288 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:23:07,648 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:23:08,175 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:23:08,195 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:31:50,140 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:31:52,738 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:31:53,091 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:31:53,093 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:32:00,277 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:32:03,980 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:32:04,186 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:32:04,190 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:56:24,119 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:56:26,702 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:56:27,017 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:56:27,019 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:56:32,276 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:56:34,817 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:56:35,133 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:56:35,135 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 23:15:06,137 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 23:15:08,659 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 23:15:08,977 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 23:15:08,979 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 23:15:13,479 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 23:15:16,264 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 23:15:16,651 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 23:15:16,653 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 23:18:11,458 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 23:18:14,151 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 23:18:14,360 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 23:18:14,361 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 23:18:21,968 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 23:18:24,852 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 23:18:25,100 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 23:18:25,117 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
