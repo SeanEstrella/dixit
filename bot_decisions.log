@@ -447,3 +447,35 @@
 2024-08-25 22:23:07,648 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
 2024-08-25 22:23:08,175 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
 2024-08-25 22:23:08,195 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:31:50,140 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:31:52,738 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:31:53,091 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:31:53,093 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:32:00,277 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:32:03,980 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:32:04,186 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:32:04,190 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:56:24,119 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:56:26,702 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:56:27,017 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:56:27,019 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 22:56:32,276 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 22:56:34,817 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 22:56:35,133 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 22:56:35,135 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 23:15:06,137 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 23:15:08,659 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 23:15:08,977 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 23:15:08,979 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 23:15:13,479 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 23:15:16,264 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 23:15:16,651 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 23:15:16,653 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 23:18:11,458 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 23:18:14,151 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 23:18:14,360 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 23:18:14,361 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).
+2024-08-25 23:18:21,968 - root - INFO - Loaded coca_ViT-L-14 model config.
+2024-08-25 23:18:24,852 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-08-25 23:18:25,100 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k/resolve/main/open_clip_pytorch_model.bin HTTP/11" 302 0
+2024-08-25 23:18:25,117 - root - INFO - Loading pretrained coca_ViT-L-14 weights (mscoco_finetuned_laion2B-s13B-b90k).

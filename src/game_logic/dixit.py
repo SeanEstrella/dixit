@@ -1,193 +1,187 @@
 import os
 import random
-from game_logic.humanAgent import Human
-from game_logic.bot import Bot
-from model_manager import ModelManager
-import pygame
+from typing import List, Tuple
+from game_logic.player import Player, Human, Bot
+from model.model_manager import ModelManager
 
 model_manager = ModelManager()
 
 
-def setup_game(player_names, num_bots, screen):
-    """Initialize the game by setting up human players and bots."""
-    players = []
-    for name in player_names:
-        players.append(Human(name, screen))
-    for _ in range(num_bots):
-        players.append(Bot(model_manager))
+def setup_game(player_names: List[str], num_bots: int, screen, num_players: int) -> List[Player]:
+    """
+    Initialize the game by setting up human players and bots.
+
+    Args:
+        player_names: A list of names for human players.
+        num_bots: The number of AI bot players.
+        screen: The game screen object.
+        num_players: The total number of players.
+
+    Returns:
+        A list of Player objects (including both Humans and Bots).
+    """
+    if num_bots < 0:
+        raise ValueError("Number of bots cannot be negative.")
+    if len(player_names) == 0:
+        raise ValueError("At least one human player is required.")
+    if num_players not in {3, 4, 5, 6}:
+        raise ValueError("Unsupported number of players. Must be 3, 4, 5, or 6.")
+
+    players = [Human(name=name, player_id=i, screen=screen) for i, name in enumerate(player_names)]
+    players.extend(Bot(name=f"Bot #{i+1}", model_manager=model_manager) for i in range(num_bots))
+
+    # Assign voting tokens based on the number of players
+    if num_players == 3:
+        voting_tokens = list(range(1, 6))
+    else:
+        voting_tokens = list(range(1, num_players + 1))
+
+    for player in players:
+        player.voting_tokens = voting_tokens[:]
+
     return players
 
 
-def deal_cards(players, cur_deck, num_cards):
-    """Deal a specified number of cards to each player."""
+def deal_cards(
+    players: List[Player], cur_deck: List[str], num_cards: int = 6
+) -> List[str]:
+    """
+    Deal a specified number of cards to each player.
+
+    Args:
+        players: A list of Player objects.
+        cur_deck: The current deck of cards.
+        num_cards: The number of cards to deal to each player.
+
+    Returns:
+        The remaining cards in the deck.
+    """
     if not cur_deck:
         raise ValueError("Deck is empty or not initialized.")
 
-    random.shuffle(cur_deck)
+    total_needed_cards = len(players) * num_cards
+    if len(cur_deck) < total_needed_cards:
+        raise ValueError("Not enough cards in the deck to deal to all players.")
+
     for player in players:
-        if len(cur_deck) < num_cards:
-            raise ValueError("Not enough cards in the deck.")
-        player.hand.extend(cur_deck.pop() for _ in range(num_cards))
+        needed_cards = num_cards - len(player.hand)
+        if needed_cards > 0:
+            cards_to_deal = min(needed_cards, len(cur_deck))
+            player.hand.extend(cur_deck.pop() for _ in range(cards_to_deal))
+            if len(player.hand) < num_cards:
+                print(f"Warning: Player {player.name} was not dealt a full hand.")
+
     return cur_deck
 
 
-def storyteller_turn(storyteller, screen):
-    """Handle the storyteller's turn to pick a card and provide a clue."""
-    return storyteller.storyteller_turn(screen)
+def storyteller_turn(storyteller: Human) -> Tuple[str, str]:
+    """
+    Handle the storyteller's turn to pick a card and provide a clue.
+
+    Args:
+        storyteller: The storyteller player.
+
+    Returns:
+        A tuple containing the card chosen by the storyteller and the clue provided.
+
+    Raises:
+        ValueError: If the storyteller does not have enough cards, does not select a valid card, or provides an invalid clue.
+    """
+    if not storyteller.hand:
+        raise ValueError("Storyteller has no cards to choose from.")
+
+    # The storyteller picks a card and provides a clue
+    card, clue = storyteller.storyteller_turn()
+
+    # Validate that a card was selected
+    if not card or card not in storyteller.hand:
+        raise ValueError("Storyteller must select a valid card from their hand.")
+
+    # Validate that a clue was provided
+    if not clue or not isinstance(clue, str) or clue.strip() == "":
+        raise ValueError("Storyteller must provide a valid, non-empty clue.")
+
+    # Ensure the card is removed from the storyteller's hand after selection
+    storyteller.hand.remove(card)
+
+    return card, clue
 
 
-def collect_votes(players, storyteller, table, clue, screen):
-    """Collect votes from all players except the storyteller."""
-    votes = []
-    for player in players:
-        if player != storyteller:
-            vote = player.vote(table, clue, screen)
-            votes.append(vote)
-    return votes
+def collect_votes(
+    players: List[Human],
+    storyteller: Human,
+    table: List[Tuple[int, str]],
+    clue: str,
+) -> List[int]:
+    """
+    Collect votes from all players except the storyteller.
+
+    Args:
+        players: A list of Human player objects.
+        storyteller: The storyteller player.
+        table: The table containing the cards and their corresponding player IDs.
+        clue: The clue provided by the storyteller.
+
+    Returns:
+        A list of votes from all players except the storyteller.
+    """
+    if not table or not clue:
+        raise ValueError("Table or clue not properly set up for voting.")
+    return [player.vote(table, clue) for player in players if player != storyteller]
 
 
-def collect_cards(players, storyteller_card, storyteller, clue, screen):
-    """Collect cards from all players based on the clue given by the storyteller."""
+def collect_cards(
+    players: List[Human],
+    storyteller_card: str,
+    storyteller: Human,
+    clue: str,
+) -> List[Tuple[int, str]]:
+    """
+    Collect cards from all players based on the clue given by the storyteller.
+
+    Args:
+        players: A list of Human player objects.
+        storyteller_card: The card chosen by the storyteller.
+        storyteller: The storyteller player.
+        clue: The clue provided by the storyteller.
+
+    Returns:
+        A list of tuples containing the player ID and their chosen card.
+    """
+    if not storyteller_card:
+        raise ValueError("Storyteller card not selected.")
+    if not players:
+        raise ValueError("No players available to collect cards from.")
+
     table = [(storyteller.id, storyteller_card)]
     for player in players:
         if player != storyteller:
-            chosen_card = player.choose_card_based_on_clue(clue, screen)
+            chosen_card = player.choose_card_based_on_clue(clue)
             table.append((player.id, chosen_card))
     random.shuffle(table)
     return table
 
 
-def score_round(players, storyteller, storyteller_card, table, votes):
-    """Score the current round based on the votes and cards played."""
-    storyteller_card_index = next(
-        (i for i, (_, card) in enumerate(table) if card == storyteller_card), None
-    )
-    if storyteller_card_index is None:
-        raise ValueError("Storyteller's card not found on the table.")
+def load_images_from_directory(directory: str) -> List[str]:
+    """
+    Load all image files from a directory into a list.
 
-    correct_votes = votes.count(storyteller_card_index)
-    if correct_votes == 0 or correct_votes == len(players) - 1:
-        for player in players:
-            if player != storyteller:
-                player.score += 2
-    else:
-        storyteller.score += 3
-        for player, vote in zip(players, votes):
-            if vote == storyteller_card_index:
-                player.score += 3
+    Args:
+        directory: The path to the directory containing the images.
 
-    for player in players:
-        if player != storyteller:
-            player_votes = sum(1 for vote in votes if table[vote][0] == player.id)
-            player.score += player_votes
-
-
-def play_game(players, cur_deck, num_cards, screen, game_manager):
-    """Main game loop to play the game with all rounds and score updates."""
-    if not game_manager:
-        raise ValueError("Game manager is not initialized.")
-
-    while cur_deck:
-        storyteller = game_manager.get_storyteller()
-        storyteller_card, clue = storyteller_turn(storyteller, screen)
-        table = collect_cards(players, storyteller_card, storyteller, clue, screen)
-        votes = collect_votes(players, storyteller, table, clue, screen)
-        score_round(players, storyteller, storyteller_card, table, votes)
-        display_scores(players, screen)
-
-        if not continue_game(screen):
-            display_final_scores(players, screen)
-            break
-
-        cur_deck = deal_cards(players, cur_deck, num_cards)
-        game_manager.next_storyteller()
-
-
-def load_images_from_directory(directory):
-    """Load all image files from a directory into a list."""
+    Returns:
+        A list of paths to the image files.
+    """
     if not os.path.exists(directory):
         raise FileNotFoundError(f"Directory {directory} does not exist.")
 
-    return [
+    image_files = sorted(
         os.path.join(directory, filename)
         for filename in os.listdir(directory)
         if filename.lower().endswith((".png", ".jpg", ".jpeg"))
-    ]
-
-
-def display_scores(players, screen):
-    """Display the current scores of all players."""
-    screen.fill((0, 0, 128))
-    font = pygame.font.Font(None, 50)
-    y_offset = 100
-    for player in players:
-        score_text = font.render(
-            f"{player.name}: {player.score} points", True, (255, 255, 255)
-        )
-        screen.blit(score_text, (100, y_offset))
-        y_offset += 50
-    pygame.display.flip()
-    pygame.time.wait(3000)
-
-
-def continue_game(screen):
-    """Ask the player if they want to continue the game."""
-    screen.fill((0, 0, 128))
-    font = pygame.font.Font(None, 50)
-    question_text = font.render(
-        "Do you want to play another round? (Yes/No)", True, (255, 255, 255)
     )
-    screen.blit(question_text, (100, 100))
-    pygame.display.flip()
 
-    while True:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                return False
-            elif event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_y:
-                    return True
-                elif event.key == pygame.K_n:
-                    return False
+    if not image_files:
+        raise FileNotFoundError(f"No image files found in directory {directory}.")
 
-
-def display_final_scores(players, screen):
-    """Display the final scores and announce the winner."""
-    screen.fill((0, 0, 128))
-    font = pygame.font.Font(None, 50)
-    y_offset = 100
-    for player in players:
-        score_text = font.render(
-            f"Final Score - {player.name}: {player.score} points", True, (255, 255, 255)
-        )
-        screen.blit(score_text, (100, y_offset))
-        y_offset += 50
-
-    max_score = max(player.score for player in players)
-    winners = [player.name for player in players if player.score == max_score]
-
-    winner_text = font.render(
-        (
-            f"The winner is {', '.join(winners)}!"
-            if len(winners) == 1
-            else f"It's a tie between: {', '.join(winners)}!"
-        ),
-        True,
-        (255, 255, 255),
-    )
-    screen.blit(winner_text, (100, y_offset))
-    pygame.display.flip()
-    pygame.time.wait(5000)
-
-
-if __name__ == "__main__":
-    pygame.init()
-    screen = pygame.display.set_mode((800, 600))
-    pygame.display.set_caption("Dixit")
-
-    players = setup_game(["Player1", "Player2"], 1, screen)
-    deck = load_images_from_directory("data/cards")
-    cur_deck = deal_cards(players, deck, 6)
-
-    play_game(players, cur_deck, 6, screen, None)
+    return image_files

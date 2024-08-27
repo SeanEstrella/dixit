@@ -5,7 +5,7 @@ import open_clip
 import torch
 import pygame
 import logging
-from model_manager import ModelManager
+from model.model_manager import ModelManager
 
 logging.basicConfig(
     filename="bot_decisions.log",

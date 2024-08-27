@@ -1,19 +1,35 @@
 import torch
 import open_clip
 import os
+import warnings
 
 
 class ModelManager:
+    _instance = None
+
+    warnings.filterwarnings(
+        "ignore", category=FutureWarning, message=".*weights_only=False.*"
+    )
+
+    def __new__(cls, *args, **kwargs):
+        if cls._instance is None:
+            cls._instance = super(ModelManager, cls).__new__(cls)
+            cls._instance.__initialized = False
+        return cls._instance
+
     def __init__(
         self,
         model_name="coca_ViT-L-14",
         pretrained="mscoco_finetuned_laion2B-s13B-b90k",
     ):
+        if self.__initialized:
+            return
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.model_name = model_name
         self.pretrained = pretrained
         self.model = None
         self.transform = None
+        self.__initialized = True
 
     def initialize_model(self):
         if self.model is None or self.transform is None:
