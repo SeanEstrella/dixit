@@ -4,19 +4,21 @@ import random
 import logging
 from pygame.locals import QUIT, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, K_RETURN, VIDEORESIZE
 from core.state_machine import (
-    GameState,
     WaitingForPlayerInput,
     ClueSubmissionState,
     VotingState,
     RoundEndState,
 )
 from ui.base_screen import BaseScreen
-from utils.rendering import render_hand
+from ui.rendering import Renderer
 from game_logic.player import Human
+
+logger = logging.getLogger('ui')
 
 class GameScreen(BaseScreen):
     def __init__(self, screen, players, cur_deck, game_manager):
         super().__init__(screen)
+        self.renderer = Renderer(screen)  # Use Renderer for all rendering tasks
         self.players = players
         self.cur_deck = cur_deck
         self.game_manager = game_manager
@@ -24,7 +26,6 @@ class GameScreen(BaseScreen):
         self.background_color = (0, 0, 128)
         self.font = self.load_font(int(screen.get_height() * 0.05))
         self.score_font = self.load_font(int(screen.get_height() * 0.04))
-        self.image_cache = {}
 
         # Game state variables
         self.current_player_index = 0
@@ -40,7 +41,7 @@ class GameScreen(BaseScreen):
 
         # Initialize state
         self.state = WaitingForPlayerInput(self)
-        logging.info("GameScreen initialized.")
+        logger.info("GameScreen initialized.")
 
     def handle_event(self, events):
         """Handle all incoming events."""
@@ -52,7 +53,7 @@ class GameScreen(BaseScreen):
                 try:
                     self.state.handle_input(event)
                 except Exception as e:
-                    logging.error(f"Error handling event {event.type}: {e}", exc_info=True)
+                    logger.error(f"Error handling event {event.type}: {e}", exc_info=True)
             elif event.type == VIDEORESIZE:
                 self.screen = pygame.display.set_mode(event.size, pygame.RESIZABLE)
                 self.render()
@@ -61,59 +62,68 @@ class GameScreen(BaseScreen):
 
     def update(self):
         """Update the current state."""
-        self.state.update()
+        try:
+            self.state.update()
+        except Exception as e:
+            logger.error(f"An error occurred during game execution: {str(e)}", exc_info=True)
+            pygame.quit()
+            sys.exit(1)
 
     def render(self):
         """Main render method to display all necessary game elements."""
-        self.render_background(self.background_color)
-        self.render_player_hand()
-        self.render_scores()
-        self.render_storyteller_info()
-        self.render_clue()
-        self.render_selected_cards()
-        pygame.display.flip()
-        logging.info("GameScreen rendered.")
+        try:
+            self.renderer.render_background(self.background_color)
+            self.render_player_hand()
+            self.render_scores()
+            self.render_storyteller_info()
+            self.render_clue()
+            self.render_selected_cards()
+            pygame.display.flip()
+            logger.info("GameScreen rendered.")
+        except Exception as e:
+            logger.error(f"An error occurred during rendering: {str(e)}", exc_info=True)
+            pygame.quit()
+            sys.exit(1)
 
     def render_player_hand(self):
         """Render the current player's hand of cards."""
         player = self.players[self.current_player_index]
-        self.card_positions = render_hand(self.screen, player.hand, self.selected_card_index)
+        self.card_positions = self.renderer.render_hand(player.hand, self.selected_card_index)
 
     def render_selected_cards(self):
         """Render the selected cards on the table."""
-        x_offset = self.screen.get_width() * 0.05
-        y_position = self.screen.get_height() * 0.3
-        card_width = self.screen.get_width() * 0.1
-        card_height = self.screen.get_height() * 0.2
-
-        for card_path in self.selected_cards:
-            card_image = self.load_card_image(card_path, card_width, card_height)
-            card_rect = card_image.get_rect(topleft=(x_offset, y_position))
-            self.screen.blit(card_image, card_rect)
-            x_offset += card_rect.width + 20
+        self.renderer.render_selected_cards(self.selected_cards)
 
     def render_scores(self):
         """Render the current scores for all players."""
         y_offset = 20
         for player in self.players:
             score_text = f"{player.name}: {player.score} points"
-            score_surface = self.font.render(score_text, True, (255, 255, 255))
-            self.screen.blit(score_surface, (20, y_offset))
-            y_offset += score_surface.get_height() + 10
+            self.renderer.render_text(score_text, self.font, (255, 255, 255), (20, y_offset))
+            y_offset += self.font.get_height() + 10
 
     def render_storyteller_info(self):
         """Render information about the current storyteller."""
         storyteller = self.game_manager.get_storyteller()
         storyteller_text = f"Storyteller: {storyteller.name}"
-        storyteller_surface = self.font.render(storyteller_text, True, (255, 215, 0))
-        self.screen.blit(storyteller_surface, (self.screen.get_width() - 250, 20))
+        self.renderer.render_text(storyteller_text, self.font, (255, 215, 0), (self.screen.get_width() - 250, 20))
 
     def render_clue(self):
         """Render the current clue provided by the storyteller."""
         if self.clue:
             clue_text = f"Clue: {self.clue}"
-            clue_surface = self.font.render(clue_text, True, (255, 255, 255))
-            self.screen.blit(clue_surface, (self.screen.get_width() // 2 - clue_surface.get_width() // 2, 20))
+            self.renderer.render_text(clue_text, self.font, (255, 255, 255), (self.screen.get_width() // 2, 20), center=True)
+
+    def render_next_round_button(self):
+        """Render the button to start the next round."""
+        pygame.draw.rect(self.screen, (255, 255, 255), self.next_round_button)
+        self.renderer.render_text(
+            "Next Round",
+            self.font,
+            (0, 0, 0),
+            (self.next_round_button.centerx, self.next_round_button.centery),
+            center=True
+        )
 
     def handle_clue_typing(self, event):
         """Handle typing events to input the clue."""
@@ -131,7 +141,7 @@ class GameScreen(BaseScreen):
         if self.selected_card_index is None or not (
             0 <= self.selected_card_index < len(player.hand)
         ):
-            logging.error("Error: selected_card_index is out of range or invalid.")
+            logger.error(f"Error: selected_card_index ({self.selected_card_index}) is out of range or invalid for hand size ({len(player.hand)}).")
             return
 
         selected_card = player.hand.pop(self.selected_card_index)
@@ -144,9 +154,10 @@ class GameScreen(BaseScreen):
 
         if self.is_round_complete():
             self.state = RoundEndState(self)
-            logging.info("Round complete. Waiting for next round to start.")
+            logger.info("Round complete. Waiting for next round to start.")
 
     def handle_clue_submission(self):
+        """Handle the submission of a clue by the storyteller."""
         self.clue = self.current_clue_input
         self.storyteller_clue_submitted = True
         self.advance_to_next_player()
@@ -156,7 +167,26 @@ class GameScreen(BaseScreen):
     def advance_to_next_player(self):
         """Advance to the next player's turn."""
         self.current_player_index = (self.current_player_index + 1) % len(self.players)
-        self.process_bot_turn()
+        if not isinstance(self.players[self.current_player_index], Human):
+            self.process_bot_turn()
+
+    def process_bot_turn(self):
+        """Process the bot player's turn."""
+        player = self.players[self.current_player_index]
+        if not isinstance(player, Human):
+            if player.hand:
+                self.selected_card_index = random.choice(range(len(player.hand)))
+                self.handle_card_selection()
+            self.game_manager.just_dealt = False
+
+    def start_new_round(self):
+        """Start a new round."""
+        logger.info("Starting a new round.")
+        self.current_player_index = 0
+        self.storyteller_clue_submitted = False
+        self.votes = []
+        self.selected_cards = []
+        self.state = WaitingForPlayerInput(self)
 
     def is_storyteller(self, player):
         """Check if the current player is the storyteller."""
@@ -186,18 +216,6 @@ class GameScreen(BaseScreen):
 
         self.state = RoundEndState(self)
 
-    def render_next_round_button(self):
-        """Render the button to start the next round."""
-        pygame.draw.rect(self.screen, (255, 255, 255), self.next_round_button)
-        text_surface = self.font.render("Next Round", True, (0, 0, 0))
-        self.screen.blit(
-            text_surface,
-            (
-                self.next_round_button.centerx - text_surface.get_width() // 2,
-                self.next_round_button.centery - text_surface.get_height() // 2,
-            ),
-        )
-
     def handle_card_click(self, mouse_pos):
         """Handle mouse click events to select a card."""
         for i, rect in enumerate(self.card_positions):
@@ -219,35 +237,3 @@ class GameScreen(BaseScreen):
     def is_voting_complete(self):
         """Check if the voting phase is complete."""
         return len(self.votes) == len(self.players) - 1
-
-    def process_bot_turn(self):
-        """Process the bot player's turn."""
-        player = self.players[self.current_player_index]
-        if not isinstance(player, Human):
-            if player.hand:
-                self.selected_card_index = random.choice(range(len(player.hand)))
-                self.handle_card_selection()
-            self.game_manager.just_dealt = False
-
-    def start_new_round(self):
-        """Start a new round."""
-        logging.info("Starting a new round.")
-        self.current_player_index = 0
-        self.round_ended = False
-        self.storyteller_clue_submitted = False
-        self.votes = []
-        self.selected_cards = []
-        self.state = WaitingForPlayerInput(self)
-
-    def load_card_image(self, card_path, width, height):
-        """Utility function to load, scale, and render a card image."""
-        cache_key = (card_path, width, height)
-        if cache_key not in self.image_cache:
-            try:
-                card_image = pygame.image.load(card_path)
-                card_image = pygame.transform.scale(card_image, (int(width), int(height)))
-                self.image_cache[cache_key] = card_image
-            except pygame.error as e:
-                logging.error(f"Error loading card image {card_path}: {e}", exc_info=True)
-                return pygame.Surface((int(width), int(height)))
-        return self.image_cache[cache_key]

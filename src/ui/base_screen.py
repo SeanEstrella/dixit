@@ -1,5 +1,8 @@
 import pygame
 import sys
+import logging
+
+logger = logging.getLogger('ui')
 
 class BaseScreen:
     def __init__(self, screen):

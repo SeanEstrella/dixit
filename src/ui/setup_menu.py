@@ -2,6 +2,9 @@ import sys
 import pygame
 from pygame.locals import QUIT, MOUSEBUTTONDOWN
 from ui.base_screen import BaseScreen
+import logging
+
+logger = logging.getLogger('ui')
 
 MAX_PLAYERS = 4
 MAX_BOTS = 4
