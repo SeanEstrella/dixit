@@ -10,26 +10,25 @@ from core.state_machine import (
     VotingState,
     RoundEndState,
 )
-from utils.rendering import render_background, render_hand, render_card
+from ui.base_screen import BaseScreen
+from utils.rendering import render_hand
 from game_logic.player import Human
-from typing import List, Optional
 
-class GameScreen:
-    def __init__(self, screen: pygame.Surface, players: List[Human], cur_deck: List[str], game_manager):
-        self.screen = screen
+class GameScreen(BaseScreen):
+    def __init__(self, screen, players, cur_deck, game_manager):
+        super().__init__(screen)
         self.players = players
         self.cur_deck = cur_deck
         self.game_manager = game_manager
         self.current_clue_input = ""
-
-        # Set up fonts and background
-        self._setup_fonts()
-        self.background_image = "data/background.jpg"  # Path to the background image
-        self.image_cache = {}  # Cache for card images
+        self.background_color = (0, 0, 128)
+        self.font = self.load_font(int(screen.get_height() * 0.05))
+        self.score_font = self.load_font(int(screen.get_height() * 0.04))
+        self.image_cache = {}
 
         # Game state variables
         self.current_player_index = 0
-        self.selected_card_index: Optional[int] = None
+        self.selected_card_index = None
         self.clue = ""
         self.storyteller_clue_submitted = False
         self.card_positions = []
@@ -41,17 +40,7 @@ class GameScreen:
 
         # Initialize state
         self.state = WaitingForPlayerInput(self)
-        logging.debug("GameScreen initialized.")
-
-    def _setup_fonts(self):
-        """Initialize fonts for rendering text."""
-        try:
-            self.font = pygame.font.Font(None, int(self.screen.get_height() * 0.05))
-            self.score_font = pygame.font.Font(None, int(self.screen.get_height() * 0.04))
-        except pygame.error as e:
-            logging.error(f"Error loading font: {e}", exc_info=True)
-            pygame.quit()
-            sys.exit(1)
+        logging.info("GameScreen initialized.")
 
     def handle_event(self, events):
         """Handle all incoming events."""
@@ -65,13 +54,10 @@ class GameScreen:
                 except Exception as e:
                     logging.error(f"Error handling event {event.type}: {e}", exc_info=True)
             elif event.type == VIDEORESIZE:
-                self._handle_resize(event.size)
-
-    def _handle_resize(self, size):
-        """Handle window resize events."""
-        self.screen = pygame.display.set_mode(size, pygame.RESIZABLE)
-        self.render_background()
-        self.render()
+                self.screen = pygame.display.set_mode(event.size, pygame.RESIZABLE)
+                self.render()
+            else:
+                pass
 
     def update(self):
         """Update the current state."""
@@ -79,24 +65,19 @@ class GameScreen:
 
     def render(self):
         """Main render method to display all necessary game elements."""
-        self.render_background()
+        self.render_background(self.background_color)
         self.render_player_hand()
         self.render_scores()
         self.render_storyteller_info()
         self.render_clue()
         self.render_selected_cards()
         pygame.display.flip()
-        logging.debug("GameScreen rendered.")
-
-    def render_background(self):
-        render_background(self.screen, self.background_image)
+        logging.info("GameScreen rendered.")
 
     def render_player_hand(self):
         """Render the current player's hand of cards."""
         player = self.players[self.current_player_index]
-        self.card_positions = render_hand(
-            self.screen, player.hand, self.selected_card_index
-        )
+        self.card_positions = render_hand(self.screen, player.hand, self.selected_card_index)
 
     def render_selected_cards(self):
         """Render the selected cards on the table."""
@@ -166,7 +147,7 @@ class GameScreen:
             logging.info("Round complete. Waiting for next round to start.")
 
     def handle_clue_submission(self):
-        self.clue = self.current_clue_input  # Set the clue
+        self.clue = self.current_clue_input
         self.storyteller_clue_submitted = True
         self.advance_to_next_player()
         self.selected_card_index = None
@@ -251,7 +232,7 @@ class GameScreen:
     def start_new_round(self):
         """Start a new round."""
         logging.info("Starting a new round.")
-        self.current_player_index = 0  # Reset player index if needed
+        self.current_player_index = 0
         self.round_ended = False
         self.storyteller_clue_submitted = False
         self.votes = []

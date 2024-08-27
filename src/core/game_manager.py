@@ -111,13 +111,19 @@ class GameManager:
     def handle_main_menu(self):
         self.main_menu.render()
         next_screen = self.main_menu.handle_events()
-        if next_screen == "start_game":
+        
+        if next_screen == "Start Game":
             self.setup_menu = SetupMenu(self.screen)
             self.current_state = GameState.SETUP_MENU
-        elif next_screen == "quit_game":
+            logging.info("Transitioning to SETUP_MENU")
+        elif next_screen == "Options":
+            # Handle options if needed
+            logging.info("Options selected (not implemented yet)")
+        elif next_screen == "Quit":
+            logging.info("Quitting game")
             self.running = False
         else:
-            logging.info("No valid selection, staying in MAIN_MENU.")  # Log only when there’s no valid selection
+            logging.info("No valid selection, staying in MAIN_MENU")
 
     def handle_setup_menu(self):
         self.setup_menu.render()
