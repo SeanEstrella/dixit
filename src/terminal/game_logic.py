@@ -25,7 +25,7 @@ def terminal_game_loop():
         table = collect_cards_from_players(players, card, storyteller, clue)
         votes = collect_votes_from_players(players, storyteller, table, clue)
 
-        game_over = handle_round_end(players, votes, table, storyteller, deck, discard_pile)
+        game_over = handle_round_end(players, votes, table, storyteller, deck, discard_pile, NUM_CARDS, WINNING_SCORE)
 
         if game_over:
             break
