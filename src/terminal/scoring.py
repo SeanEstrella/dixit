@@ -24,6 +24,10 @@ def handle_round_end(players: List[Player], votes: List[int], table: List[Tuple[
     calculate_scores(players, votes, table, storyteller)
     discard_pile.extend([card for _, card in table])
     deck = deal_cards(players, deck, discard_pile, num_cards)
+    
+    print("\n--- Round Summary ---")
+    for player in players:
+        print(f"{player.name} has {player.score} points.")
 
     for player in players:
         if player.score >= winning_score:
