@@ -11,7 +11,7 @@ warnings.filterwarnings(
     "ignore", category=FutureWarning, message=".*weights_only=False.*"
 )
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('image_captioning')
 
 
 class ImageCaptionGenerator:

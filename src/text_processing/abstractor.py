@@ -5,18 +5,21 @@ import logging
 import random
 from typing import List, Optional
 
-# Constants
 RETRIES = 3
-DEFAULT_MODEL = "gpt-4"  # Use the most reliable or latest available model name
+DEFAULT_MODEL = "gpt-4"
+
+logger = logging.getLogger('text_processing')
 
 class Abstractor:
     def __init__(self, api_key: Optional[str] = None, model_name: str = DEFAULT_MODEL):
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
         if not self.api_key:
+            logger.error("API key is required for OpenAI.")
             raise ValueError("API key is required for OpenAI")
 
         openai.api_key = self.api_key
         self.model_name = model_name
+        logger.info(f"Abstractor initialized with model: {self.model_name}")
 
     def generate_creative_abstract(
         self,
@@ -54,7 +57,7 @@ class Abstractor:
 
         for attempt in range(RETRIES):
             try:
-                logging.info(f"Attempt {attempt + 1} to generate a clue.")
+                logger.debug(f"Attempt {attempt + 1} to generate a clue.")
                 response = openai.ChatCompletion.create(
                     model=self.model_name,
                     messages=[{"role": "user", "content": prompt}],
@@ -68,28 +71,28 @@ class Abstractor:
                     banned.lower() not in generated_clue.lower()
                     for banned in banned_phrases
                 ):
-                    logging.info("Clue generated successfully.")
+                    logger.info("Clue generated successfully.")
                     return generated_clue
                 else:
-                    logging.warning(f"Generated clue contained banned phrases: {generated_clue}")
+                    logger.warning(f"Generated clue contained banned phrases: {generated_clue}")
 
             except openai.error.RateLimitError:
                 if attempt < RETRIES - 1:
                     wait_time = 2 ** attempt + random.uniform(0, 1)
-                    logging.warning(
+                    logger.warning(
                         f"Rate limit exceeded. Retrying in {wait_time:.2f} seconds..."
                     )
                     time.sleep(wait_time)
                 else:
-                    logging.error("Rate limit exceeded after multiple retries.")
+                    logger.error("Rate limit exceeded after multiple retries.")
                     raise
             except openai.error.OpenAIError as e:
-                logging.error(f"OpenAI API error occurred: {e}")
+                logger.error(f"OpenAI API error occurred: {e}")
                 if attempt == RETRIES - 1:
                     return "Abstract Clue"
             except Exception as e:
-                logging.error(f"An unexpected error occurred: {e}")
+                logger.error(f"An unexpected error occurred: {e}")
                 return "Abstract Clue"
 
-        logging.warning("Returning fallback clue after all retries.")
+        logger.warning("Returning fallback clue after all retries.")
         return "Fallback Clue"
