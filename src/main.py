@@ -5,6 +5,47 @@ import logging
 import os
 from core.game_manager import GameManager
 from model.model_manager import ModelManager
+from dotenv import load_dotenv
+
+import mysql.connector
+from mysql.connector import errorcode
+
+def db_connect():
+    print("attempting to connect to db")
+    try:
+        cnx = mysql.connector.connect(user=os.getenv('USER'),
+                                      password=os.getenv('PASSWORD'),
+                                      host='dixitdb.cdguq4e4c4jo.us-east-2.rds.amazonaws.com',
+                                      database='dixitdb')
+        
+        return cnx
+    except mysql.connector.Error as err:
+        if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
+            print("Something is wrong with your user name or password")
+        elif err.errno == errorcode.ER_BAD_DB_ERROR:
+            print("Database does not exist")
+        else:
+            print(err)
+
+def test_sql(cnx):
+    is_bot = False
+    name = 'John Doe'
+
+    cursor = cnx.cursor()
+
+    insert_query = """
+        INSERT INTO Player (is_bot, name)
+        VALUES (%s, %s)
+        """
+
+    cursor.execute(insert_query, (is_bot, name))
+
+    cnx.commit()
+
+    print(f"Inserted player ID: {cursor.lastrowid}")
+    
+    cursor.close()
+
 
 def parse_arguments():
     """Parse command-line arguments for game configuration."""
@@ -41,6 +82,11 @@ def show_error_message(screen, message, duration=5000, logger=None):
         logger.error(f"Error displaying error message: {e}", exc_info=True)
 
 def main():
+    # added .env loader
+    load_dotenv()
+    # Configure DB
+    cnx = db_connect()
+    test_sql(cnx)
     # Configure logging
     configure_logging(env='development')
     logger = logging.getLogger(__name__)
@@ -80,6 +126,7 @@ def main():
         show_error_message(screen, f"An error occurred: {e}", logger=logger)
     finally:
         logger.info("Shutting down Pygame and exiting the game.")
+        cnx.close()
         pygame.quit()
 
 if __name__ == "__main__":
