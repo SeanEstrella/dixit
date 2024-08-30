@@ -1,0 +1,1442 @@
+[
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00004.jpg",
+        "clue": "\"Fourth visual element in digital collection\"",
+        "timestamp": "2024-08-30T05:39:25.310304"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00067.jpg",
+        "timestamp": "2024-08-30T05:39:25.312701"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00071.jpg",
+        "timestamp": "2024-08-30T05:39:25.313138"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:39:26.027563"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:39:26.144894"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 2",
+        "card": "data/images/cards/card_00033.jpg",
+        "clue": "\"Seek not in the realm of the living or the dead,\nBut within the frame where pixels are",
+        "timestamp": "2024-08-30T05:39:28.004458"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00092.jpg",
+        "timestamp": "2024-08-30T05:39:28.005186"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00094.jpg",
+        "timestamp": "2024-08-30T05:39:28.005600"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:39:28.105172"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:39:28.205802"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 3",
+        "card": "data/images/cards/card_00078.jpg",
+        "clue": "\"Midnight's silent sentinel, guiding the way with a celestial light.\"",
+        "timestamp": "2024-08-30T05:39:29.805173"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00083.jpg",
+        "timestamp": "2024-08-30T05:39:29.805743"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00033.jpg",
+        "timestamp": "2024-08-30T05:39:29.806170"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:39:29.890301"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:39:29.992618"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00004.jpg",
+        "clue": "\"Dream Weaver's Symphony\"",
+        "timestamp": "2024-08-30T05:39:30.609914"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00044.jpg",
+        "timestamp": "2024-08-30T05:39:30.610489"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00006.jpg",
+        "timestamp": "2024-08-30T05:39:30.610953"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:39:30.709434"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:39:30.822718"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 2",
+        "card": "data/images/cards/card_00002.jpg",
+        "clue": "\"A moment captured in time, where kings and queens rule the realm of suits and numbers.\"",
+        "timestamp": "2024-08-30T05:39:31.960307"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00068.jpg",
+        "timestamp": "2024-08-30T05:39:31.962026"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00078.jpg",
+        "timestamp": "2024-08-30T05:39:31.962775"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:39:32.093410"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:39:32.192182"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 3",
+        "card": "data/images/cards/card_00009.jpg",
+        "clue": "\"In realms digital where colors twine,\nA rectangle of secrets, in pixels align.\nA number,",
+        "timestamp": "2024-08-30T05:39:33.820127"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00004.jpg",
+        "timestamp": "2024-08-30T05:39:33.820992"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00096.jpg",
+        "timestamp": "2024-08-30T05:39:33.821535"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:39:33.916535"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:39:34.012206"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00005.jpg",
+        "clue": "\"An ethereal dance of colors and shapes, suspended in a digital realm, challenging the viewer's",
+        "timestamp": "2024-08-30T05:39:36.004130"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00002.jpg",
+        "timestamp": "2024-08-30T05:39:36.004978"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00037.jpg",
+        "timestamp": "2024-08-30T05:39:36.005582"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:39:36.267073"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:39:36.371464"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 2",
+        "card": "data/images/cards/card_00030.jpg",
+        "clue": "\"Dream Weaver's Loom\"",
+        "timestamp": "2024-08-30T05:39:37.014449"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00005.jpg",
+        "timestamp": "2024-08-30T05:39:37.015219"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00009.jpg",
+        "timestamp": "2024-08-30T05:39:37.015822"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:39:37.104539"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:39:37.190588"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00069.jpg",
+        "clue": "\"Digital snapshot of elusive 69th game card\"",
+        "timestamp": "2024-08-30T05:51:29.879060"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00040.jpg",
+        "timestamp": "2024-08-30T05:51:29.887265"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00058.jpg",
+        "timestamp": "2024-08-30T05:51:29.888258"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:51:30.633365"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:51:30.735911"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 2",
+        "card": "data/images/cards/card_00029.jpg",
+        "clue": "In a realm where pixels meet and merge,\nTwenty-nine of its kind quietly emerge.\nA digital tape",
+        "timestamp": "2024-08-30T05:51:31.878018"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00049.jpg",
+        "timestamp": "2024-08-30T05:51:31.878962"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00053.jpg",
+        "timestamp": "2024-08-30T05:51:31.879725"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:51:31.988441"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:51:32.091153"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 3",
+        "card": "data/images/cards/card_00007.jpg",
+        "clue": "\"Seventh visual information in a deck\"",
+        "timestamp": "2024-08-30T05:51:32.724778"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00032.jpg",
+        "timestamp": "2024-08-30T05:51:32.725553"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00094.jpg",
+        "timestamp": "2024-08-30T05:51:32.726304"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:51:32.815461"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:51:32.907216"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00013.jpg",
+        "clue": "\"Whispering Shadows\"",
+        "timestamp": "2024-08-30T05:51:33.467320"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00056.jpg",
+        "timestamp": "2024-08-30T05:51:33.468253"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00012.jpg",
+        "timestamp": "2024-08-30T05:51:33.469097"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:51:33.553152"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:51:33.650244"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 2",
+        "card": "data/images/cards/card_00029.jpg",
+        "clue": "\"Within the realm of pixels, a mystery unfurls,\nA tableau frozen in binary, where reality",
+        "timestamp": "2024-08-30T05:51:35.193393"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00095.jpg",
+        "timestamp": "2024-08-30T05:51:35.194362"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00064.jpg",
+        "timestamp": "2024-08-30T05:51:35.195166"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:51:35.281596"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:51:35.366078"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 3",
+        "card": "data/images/cards/card_00007.jpg",
+        "clue": "\"A solitary king ruling over the kingdom of hearts, dressed in rich hues of red and gold.\"",
+        "timestamp": "2024-08-30T05:51:36.525812"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00063.jpg",
+        "timestamp": "2024-08-30T05:51:36.527065"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00092.jpg",
+        "timestamp": "2024-08-30T05:51:36.527999"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:51:36.609950"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T05:51:36.701064"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00069.jpg",
+        "clue": "\"Galactic Serenade\"",
+        "timestamp": "2024-08-30T05:51:37.400656"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00047.jpg",
+        "timestamp": "2024-08-30T05:51:37.401905"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00044.jpg",
+        "timestamp": "2024-08-30T05:51:37.402824"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:51:37.494318"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:51:37.590688"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 2",
+        "card": "data/images/cards/card_00029.jpg",
+        "clue": "\"A mirrored reflection of an otherworldly voyage.\"",
+        "timestamp": "2024-08-30T05:51:38.282329"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00013.jpg",
+        "timestamp": "2024-08-30T05:51:38.283493"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00007.jpg",
+        "timestamp": "2024-08-30T05:51:38.284549"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T05:51:38.370017"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00062.jpg",
+        "clue": "\"A silent melody frozen in time, etched into grooves of circular nostalgia.\"",
+        "timestamp": "2024-08-30T06:07:03.224410"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00076.jpg",
+        "timestamp": "2024-08-30T06:07:03.227321"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00098.jpg",
+        "timestamp": "2024-08-30T06:07:03.228279"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:07:03.854960"
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:07:03.967373"
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00032.jpg",
+        "clue": "\"A regal feline cloaked in an autumnal hue, bearing the weight of a crown and",
+        "timestamp": "2024-08-30T06:20:28.416244",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00054.jpg",
+        "timestamp": "2024-08-30T06:20:28.423162",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00098.jpg",
+        "timestamp": "2024-08-30T06:20:28.424529",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:20:29.199824",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:20:29.300418",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 2",
+        "card": "data/images/cards/card_00053.jpg",
+        "clue": "\"Through the lens of glass and time, lies an image unseen, yet divine. In numbers and",
+        "timestamp": "2024-08-30T06:20:30.744449",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00073.jpg",
+        "timestamp": "2024-08-30T06:20:30.746039",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00058.jpg",
+        "timestamp": "2024-08-30T06:20:30.747324",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T06:20:30.856527",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T06:20:30.968690",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 3",
+        "card": "data/images/cards/card_00097.jpg",
+        "clue": "\"Whimsical Solitude\"",
+        "timestamp": "2024-08-30T06:20:31.683716",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00015.jpg",
+        "timestamp": "2024-08-30T06:20:31.685124",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00036.jpg",
+        "timestamp": "2024-08-30T06:20:31.686288",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:20:31.773657",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:20:31.880314",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00030.jpg",
+        "clue": "\"Digital Dreamcatcher\"",
+        "timestamp": "2024-08-30T06:20:32.619166",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00051.jpg",
+        "timestamp": "2024-08-30T06:20:32.620703",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00065.jpg",
+        "timestamp": "2024-08-30T06:20:32.621951",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:20:32.721450",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:20:32.828807",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 2",
+        "card": "data/images/cards/card_00018.jpg",
+        "clue": "\"Digital file for eighteenth collectible in series\"",
+        "timestamp": "2024-08-30T06:20:33.726395",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00070.jpg",
+        "timestamp": "2024-08-30T06:20:33.727756",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00092.jpg",
+        "timestamp": "2024-08-30T06:20:33.728961",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:20:33.828728",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:20:33.929321",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 3",
+        "card": "data/images/cards/card_00097.jpg",
+        "clue": "\"A royal hand, holding the power of the universe, poised in a game of celestial poker.\"",
+        "timestamp": "2024-08-30T06:20:35.303784",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00030.jpg",
+        "timestamp": "2024-08-30T06:20:35.305492",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00053.jpg",
+        "timestamp": "2024-08-30T06:20:35.306982",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:20:35.402723",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:20:35.502562",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00077.jpg",
+        "clue": "\"Peer into the realm of pixels and lines,\nA ciphered tableau where truth intertwines.\nSeek",
+        "timestamp": "2024-08-30T06:20:36.761119",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00085.jpg",
+        "timestamp": "2024-08-30T06:20:36.762579",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00097.jpg",
+        "timestamp": "2024-08-30T06:20:36.763853",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T06:20:36.850242",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T06:20:36.960779",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 2",
+        "card": "data/images/cards/card_00018.jpg",
+        "clue": "\"Eighteenth visual file in card collection\"",
+        "timestamp": "2024-08-30T06:20:37.923009",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00077.jpg",
+        "timestamp": "2024-08-30T06:20:37.924596",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00022.jpg",
+        "timestamp": "2024-08-30T06:20:37.925993",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:20:38.018489",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00032.jpg",
+        "clue": "\"Digital snapshot of the thirty-second playing card\"",
+        "timestamp": "2024-08-30T06:23:08.391418",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00015.jpg",
+        "clue": "In a realm where numbers dance with words, lies a portrait of unseen chords. An image locked in",
+        "timestamp": "2024-08-30T06:39:40.922919",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00091.jpg",
+        "timestamp": "2024-08-30T06:39:40.931072",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00041.jpg",
+        "timestamp": "2024-08-30T06:39:40.933447",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 2,
+        "timestamp": "2024-08-30T06:39:41.844489",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 2,
+        "timestamp": "2024-08-30T06:39:41.999715",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 2",
+        "card": "data/images/cards/card_00049.jpg",
+        "clue": "\"Digital representation of the 49th playing card.\"",
+        "timestamp": "2024-08-30T06:39:45.663524",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00024.jpg",
+        "timestamp": "2024-08-30T06:39:45.665035",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00016.jpg",
+        "timestamp": "2024-08-30T06:39:45.666426",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 2,
+        "timestamp": "2024-08-30T06:39:46.084781",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 2,
+        "timestamp": "2024-08-30T06:39:46.237460",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 3",
+        "card": "data/images/cards/card_00034.jpg",
+        "clue": "\"Whispering Shadows\"",
+        "timestamp": "2024-08-30T06:39:46.956794",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00086.jpg",
+        "timestamp": "2024-08-30T06:39:46.958506",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00037.jpg",
+        "timestamp": "2024-08-30T06:39:46.960173",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:39:47.108230",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:39:47.266851",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00076.jpg",
+        "clue": "\"Pixelated Dreams\"",
+        "timestamp": "2024-08-30T06:39:47.983307",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00049.jpg",
+        "timestamp": "2024-08-30T06:39:47.985144",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00094.jpg",
+        "timestamp": "2024-08-30T06:39:47.986943",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:39:48.144008",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:39:48.297628",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 2",
+        "card": "data/images/cards/card_00077.jpg",
+        "clue": "\"Dreamt Constellations\"",
+        "timestamp": "2024-08-30T06:39:48.969155",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00013.jpg",
+        "timestamp": "2024-08-30T06:39:48.971264",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00050.jpg",
+        "timestamp": "2024-08-30T06:39:48.973054",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:39:49.110386",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 0,
+        "timestamp": "2024-08-30T06:39:49.258085",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 3",
+        "card": "data/images/cards/card_00056.jpg",
+        "clue": "In realms of pixel, color, and light, a static scene of a digital night. A numbered",
+        "timestamp": "2024-08-30T06:39:50.559278",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00015.jpg",
+        "timestamp": "2024-08-30T06:39:50.561521",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00030.jpg",
+        "timestamp": "2024-08-30T06:39:50.563582",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T06:39:50.702815",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T06:39:50.846007",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 1",
+        "card": "data/images/cards/card_00076.jpg",
+        "clue": "\"Digital snapshot of the 76th card\"",
+        "timestamp": "2024-08-30T06:39:51.702820",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00023.jpg",
+        "timestamp": "2024-08-30T06:39:51.704978",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00056.jpg",
+        "timestamp": "2024-08-30T06:39:51.706991",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 2",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T06:39:51.847766",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "vote",
+        "selected_card_index": 1,
+        "timestamp": "2024-08-30T06:39:52.001214",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "storyteller",
+        "player": "AI Bot 2",
+        "card": "data/images/cards/card_00077.jpg",
+        "clue": "\"Beyond the pixels, where colors blend,\nLies an image with a tale to send.\nIn",
+        "timestamp": "2024-08-30T06:39:53.117609",
+        "action": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00076.jpg",
+        "timestamp": "2024-08-30T06:39:53.119513",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 3",
+        "action": "choose_card",
+        "chosen_card": "data/images/cards/card_00034.jpg",
+        "timestamp": "2024-08-30T06:39:53.121302",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    },
+    {
+        "role": "player",
+        "player": "AI Bot 1",
+        "action": "vote",
+        "selected_card_index": 2,
+        "timestamp": "2024-08-30T06:39:53.251761",
+        "card": "",
+        "clue": "",
+        "vote": "",
+        "error": ""
+    }
+]

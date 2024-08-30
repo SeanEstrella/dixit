@@ -1,0 +1,19 @@
+// AI in Dixit: How the Bot Works
+digraph {
+	fontname="Proxima Nova" fontsize=12 rankdir=LR
+	Start [label="AI Bot" fillcolor="#A7D3F2" shape=ellipse style=filled]
+	GenerateClue [label="Generate Clue (GPT-4)
+[Lightbulb]" fillcolor="#A1E3A1" shape=rectangle style=filled]
+	ObfuscateClue [label="Obfuscate Clue (GPT-4)" fillcolor="#A1E3A1" shape=rectangle style=filled]
+	ProcessImages [label="Process Images (OpenCLIP)
+[Camera]" fillcolor="#F4A7A3" shape=rectangle style=filled]
+	CompareClues [label="Compare Clues and Images" fillcolor="#F4A7A3" shape=rectangle style=filled]
+	Start -> GenerateClue [label="Storytelling Track" arrowsize=0.7 fontcolor=black fontsize=10]
+	GenerateClue -> ObfuscateClue [arrowsize=0.7 fontcolor=black fontsize=10]
+	Start -> ProcessImages [label="Guessing Track" arrowsize=0.7 fontcolor=black fontsize=10]
+	ProcessImages -> CompareClues [arrowsize=0.7 fontcolor=black fontsize=10]
+	Legend [label="Legend:
+[Lightbulb]: Clue Generation
+[Camera]: Image Processing" fillcolor=white fontcolor=black fontsize=10 shape=box style=dashed width=1.5]
+	fontsize=10 labeljust=l labelloc=b
+}

@@ -1,0 +1,19 @@
+digraph OpenCLIPProcess {
+	rankdir=TB size="8,5"
+	node [color=orange fontcolor=black shape=circle style=filled]
+	Start [label=Start]
+	node [color=lightcyan fontcolor=black shape=box style=filled]
+	LoadImage [label="Load Image from Path"]
+	ConvertRGB [label="Convert Image to RGB"]
+	TransformTensor [label="Apply Transform to Create Tensor"]
+	GenerateCaption [label="Generate Caption using OpenCLIP Model"]
+	OutputCaption [label="Output Descriptive Caption"]
+	node [color=orange fontcolor=black shape=circle style=filled]
+	End [label=End]
+	Start -> LoadImage
+	LoadImage -> ConvertRGB
+	ConvertRGB -> TransformTensor
+	TransformTensor -> GenerateCaption
+	GenerateCaption -> OutputCaption
+	OutputCaption -> End
+}
