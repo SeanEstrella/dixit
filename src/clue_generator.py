@@ -50,7 +50,7 @@ class ClueGenerator:
         ]
 
         for attempt in range(RETRIES):
-            prompt = random.choice(alternative_prompts)  # Choose a prompt variation
+            prompt = random.choice(alternative_prompts) 
             try:
                 logger.debug(f"Attempt {attempt + 1} to generate a clue.")
                 response = openai.ChatCompletion.create(
@@ -106,7 +106,7 @@ class ClueGenerator:
         keywords = self.extract_keywords(description)
 
         if len(keywords) < 2:
-            keywords.extend(["something", "mystical"])  # Default keywords if fewer are extracted
+            keywords.extend(["something", "mystical"])
 
         templates = [
             f"A glimpse of {keywords[0]}...",

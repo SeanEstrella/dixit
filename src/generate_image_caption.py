@@ -130,7 +130,7 @@ def save_captions_to_file(captions: dict, output_file: str):
 
 
 if __name__ == "__main__":
-    from src.main import model_manager  # Import the centralized ModelManager
+    from src.main import model_manager
 
     logging.basicConfig(level=logging.INFO)
     

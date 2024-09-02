@@ -1,4 +1,3 @@
-# data_manager.py
 import csv
 import datetime
 import json

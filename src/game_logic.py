@@ -158,7 +158,6 @@ def calculate_score(votes, storyteller, table):
         int: The calculated score for the round.
     """
     try:
-        # Correctly identify storyteller card in the table
         storyteller_card_index = next(
             index for index, (player_id, card) in enumerate(table)
             if player_id == storyteller.player_id
@@ -167,7 +166,6 @@ def calculate_score(votes, storyteller, table):
         logger.error(f"Storyteller card not found in table. Table state: {table}")
         return 0
 
-    # Calculate score logic
     correct_votes = votes.count(storyteller_card_index)
     total_votes = len(votes)
 

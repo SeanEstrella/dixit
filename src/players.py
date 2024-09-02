@@ -45,7 +45,7 @@ class Human(Player):
         Ask for input and return the chosen card and clue.
         """
         card = self.choose_card()
-        self.selected_card = card  # Ensure selected card is set
+        self.selected_card = card
         clue = input("Enter a clue for the chosen card: ")
         log_action(data_manager, 'storyteller', self.name, card=card, clue=clue)
         return card, clue
